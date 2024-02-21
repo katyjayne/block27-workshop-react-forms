@@ -33,28 +33,20 @@ function SignUpForm({ setToken }) {
 
   return (
     <>
-          <h2>Sign Up!</h2>
-          {error && <p>{error}</p>}
-
+      <h2>Sign Up!</h2>
+      {error && <p>{error}</p>}
       <form onSubmit={handleSubmit}>
         <label>
-              Username: 
-          <input 
-          value={username} 
-          onChange={(e) => setUsername(e.target.value)} 
-          />
+          Username: 
+          <input value={username} onChange={(e) => setUsername(e.target.value)} />
         </label>
         <br></br>
         <label>
-              Password: 
-          <input 
-          type="password"
-          value={password} 
-          onChange={(e) => setPassword(e.target.value)} 
-          />
+          Password: 
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </label>
         <br></br>
-            <button>Submit</button>
+          <button>Submit</button>
       </form>
     </>
   );
